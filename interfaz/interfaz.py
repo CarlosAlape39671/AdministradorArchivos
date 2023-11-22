@@ -211,7 +211,6 @@ class Interfaz():
                         n_item_padre = treeview.insert(item_padre, "end", text=elemento, values=("Carpeta", self.obtener_fecha_ultima_modificacion(ruta_completa)))
                         self.llenar_treeview(treeview, ruta_completa, n_item_padre)
                     elif os.path.isfile(ruta_completa):
-                        print("Hola muindo")
                         # Es un archivo
                         n_item_padre = treeview.insert(item_padre, "end", text=elemento, values=("Archivo", self.obtener_fecha_ultima_modificacion(ruta_completa), ruta_completa))
                         self.llenar_treeview(treeview, ruta_completa, n_item_padre)
